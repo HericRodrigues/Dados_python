@@ -1,0 +1,42 @@
+#CRIE UM SISTEMA ONDE O USUARIO PRECISA
+#DIGITAR UMA SENHA PARA ACESAR UMA INFORMAÇÃO
+
+#input()
+#print()
+
+#4 tipos primitivos
+
+#indentação|Organização do codigo
+#senha_usuario = input("Digite sua senha: ")
+#senha_do_sistema = "123#olaMundo"
+
+#if senha_usuario == senha_do_sistema:
+ #   print("Senha Autorizada")
+#else:
+ #   print("Senha Negado")
+
+#_______________________________________________#
+
+ #Faça uma sistema para um usuario inserir dados e ter uma
+ #acesso bloqueado caso tenha digitado algo errado ao final
+
+nume_usuario = input("Digite seu nume: ")
+idade = input("Digite sua idade: ")
+endereco= input("Digite seu endereço: ")
+curso= input("Digite seu curso: ")
+email_usuario= input("Digite seu email de usuario: ")
+senha_usuario= input ("Digite uma senha: ")
+print("........................................................................")
+print("Olá para acessar o sistema digite a senha")
+acesso_email = input("Digite seu email para login")
+acesso_senha= input("Digite a senha")
+
+if email_usuario  == acesso_email and senha_usuario == acesso_senha :
+    print("Olá ", nume_usuario)
+    print("Seus dados são os seguintes: ")
+    print(".........................................................")
+    print("sua idade é: ", idade)
+    print("Seu endeço é: ", endereco)
+    print("Seu curso é: ", curso)
+else:
+    print("Você Digitou algo errado")
