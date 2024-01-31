@@ -36,28 +36,36 @@
  #if not 2 != True:
    #  pass
 
-# 1 Crie um programa para efetuar a leitura de um
-# inteiro e apresentar o resultado do quadrado deste número.
+EXERCICIOS 
 
+###1
+#Crie um programa para efetuar a leitura de um
+# inteiro e apresentar o resultado do quadrado deste número.
 
 #numero_int = int(input('Digite um numero INTEIRO '))
 #print('O quadrado desse numero é: ', numero_int *  numero_int)
+#_______________________________________________#
 
-# 2 Crie duas variáveis para armazenar seu primeiro nome e sobrenome. Em seguida, concatene-as
-#para formar seu nome completo e exiba o resultado.
+###2
+#Crie duas variáveis para armazenar seu primeiro nome e sobrenome.
+#Em seguida, concatene-as para formar seu nome completo e
+#exiba o resultado.
 
 #nome = input('Digite seu nome: ')
 #sobre = input('Digite seu sobrenome')
 
 #print(" Seu nome completo é ", nome, sobre)
+#_______________________________________________#
 
-#3 -Peça ao usuário para digitar dois números inteiros e
+###3
+#-Peça ao usuário para digitar dois números inteiros e
 #armazene-os em variáveis. Realize a concatenação
 #desses números como strings e exiba o resultado.
 
 #num_1 = int(input("Digite valor de num_1: "))
 #num_2 = int(input("Digite valor de num_2: "))
 #print("Numeros digitados são " , num_1 num_2)
+#_______________________________________________#
 
 #4 -Crie uma variável para armazenar a palavra "Python".
 #Em seguida, adicione um número inteiro ao final da
@@ -66,14 +74,15 @@
 #guarda= 'Python'
 #num = input("Digite um valor int ")
 #print ( guarda, num)
+#_______________________________________________#
 
-#5 -Declare uma variável contendo uma frase.
+|###5
+#Declare uma variável contendo uma frase.
 #Em seguida, peça ao usuário para digitar uma palavra
 #e concatene essa palavra no final da frase. Exiba o resultado.
-
 
 dig_frase = input("Digite alguma linguagem de progamção: ")
 frase_ini = 'Eu sou desenvolvedor'
 
 print(frase_ini, dig_frase)
-
+#_______________________________________________#
