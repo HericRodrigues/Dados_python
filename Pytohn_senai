@@ -66,3 +66,14 @@
 #guarda= 'Python'
 #num = input("Digite um valor int ")
 #print ( guarda, num)
+
+#5 -Declare uma variável contendo uma frase.
+#Em seguida, peça ao usuário para digitar uma palavra
+#e concatene essa palavra no final da frase. Exiba o resultado.
+
+
+dig_frase = input("Digite alguma linguagem de progamção: ")
+frase_ini = 'Eu sou desenvolvedor'
+
+print(frase_ini, dig_frase)
+
