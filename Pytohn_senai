@@ -1,0 +1,68 @@
+#nome = input("Digite seu nome: ")
+#print("Meu nome é", nome )
+
+
+#numero = int (input('Digite um numero '))
+#texto = input('Digite um Olá ')
+#real = float (input('Digite um numero real '))
+#boleano = bool (input('Digite um dado boleano '))
+
+#print(type(numero), type(texto), type(real), type(boleano))
+
+#print(type(numero))
+#print(type(texto))
+#print(type(real))
+#print(type(boleano))
+
+#a= 10
+#b= True
+#c= 100.80
+#d= 'text'
+
+#print(type)
+
+#MODULO DIVISOR PARA SABER VAI TER RESTO
+
+#if 10 % 2 == 0:
+ #   print('É um divisor')
+#else:
+ #   print('Não é divisivel')
+
+#print(a)
+
+ #if A >= B: #igualdade #diferença
+ #pass Significa faça isso!!!!
+ 
+ #if not 2 != True:
+   #  pass
+
+# 1 Crie um programa para efetuar a leitura de um
+# inteiro e apresentar o resultado do quadrado deste número.
+
+
+#numero_int = int(input('Digite um numero INTEIRO '))
+#print('O quadrado desse numero é: ', numero_int *  numero_int)
+
+# 2 Crie duas variáveis para armazenar seu primeiro nome e sobrenome. Em seguida, concatene-as
+#para formar seu nome completo e exiba o resultado.
+
+#nome = input('Digite seu nome: ')
+#sobre = input('Digite seu sobrenome')
+
+#print(" Seu nome completo é ", nome, sobre)
+
+#3 -Peça ao usuário para digitar dois números inteiros e
+#armazene-os em variáveis. Realize a concatenação
+#desses números como strings e exiba o resultado.
+
+#num_1 = int(input("Digite valor de num_1: "))
+#num_2 = int(input("Digite valor de num_2: "))
+#print("Numeros digitados são " , num_1 num_2)
+
+#4 -Crie uma variável para armazenar a palavra "Python".
+#Em seguida, adicione um número inteiro ao final da
+#palavra usando a concatenação e exiba o resultado.
+
+#guarda= 'Python'
+#num = input("Digite um valor int ")
+#print ( guarda, num)
