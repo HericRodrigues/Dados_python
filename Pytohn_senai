@@ -64,7 +64,7 @@ EXERCICIOS
 
 #num_1 = int(input("Digite valor de num_1: "))
 #num_2 = int(input("Digite valor de num_2: "))
-#print("Numeros digitados são " , num_1 num_2)
+#print("Numeros digitados são " , num_1,num_2)
 #_______________________________________________#
 
 #4 -Crie uma variável para armazenar a palavra "Python".
