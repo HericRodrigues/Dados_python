@@ -1,0 +1,80 @@
+|###1|
+#Imprima uma mensagem de boas-vindas na tela.
+#print("Boas-vindas ")
+#_______________________________________________#
+
+|### 2|
+#Declare uma variável booleana verdadeiro
+#com o valor True e imprima seu tipo
+
+#A = True
+
+#print ("Valor de A ", A)
+ #_______________________________________________#
+
+
+|###3|
+#Imprima o resultado da multiplicação de dois números
+#decimais de sua escolha
+#num_1 = int(input("Digite um valor a ser multiplicado: "))
+#num_2 = int(input("Digite um valor a ser multiplicado: "))
+#mult= (num_1 * num_2)
+
+#print(mult)
+#_______________________________________________#
+
+|###4|
+#Imprima o resultado da divisão de dois números inteiros de sua escolha.
+#num_a = int(input("Digite um numero para ser dividido: "))
+#num_b = int(input("Digite um numero para ser dividido: "))
+
+#div = (num_a/num_b)
+#print(div)
+#_______________________________________________#
+
+|###5|
+#Imprima o resultado da subtração de dois números inteiros de sua escolha
+
+#sub_1 = int(input("Digite um valor para ser subtraido: "))
+#sub_2 = int(input("Digite um valor para ser subtraido: "))
+#subtra = (sub_1-sub_2)
+#print(subtra)
+#_______________________________________________#
+
+|###6|
+#Imprima o resultado da divisão inteira de dois números
+#inteiros de sua escolha.
+
+#rest_1 = int(input("Digite um valor para descobrir o resto: "))
+#rest_2 = int(input("Digite um valor para descobrir o resto: "))
+#resto_total = (rest_1 % rest_2)
+#print("O resto foi: ", resto_total)
+#_______________________________________________#
+
+|###7|
+#Imprima o resultado da multiplicação de
+#dois números decimais de sua escolha
+
+#dec_1 = float(input("Digite um numero decimal(com ponto):  "))
+#dec_2 = float(input("Digite um numero decimal(com ponto):  "))
+#decimal = (dec_1*dec_2)
+#print(decimal)
+
+|###8|
+#Declare uma variável `numero` e atribua um número inteiro.
+#Em seguida, imprima o dobro desse número
+
+#numero = int(input("Digite um numero para saber o dobre dele: "))
+#dobro = (numero*2)
+#print(dobro)
+#_______________________________________________#
+
+|###9|
+#Crie uma calculadora de soma com as ferramentas que vc já conhece
+#(Use apenas input, print e variavel)
+
+
+
+|###10|
+#Crie um sistema de cadastro com as estruturas que vc já conhece(Use apenas input, print
+#e variavel)
