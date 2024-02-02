@@ -1,0 +1,50 @@
+##Multiplique 4 por 6 e divida o resultado por 2.
+mult1= (4*6/2)
+print(mult1)
+print()
+
+#Calcule a soma de 5 e 7.
+soma=(5+7)
+print(soma)
+print()
+
+##Multiplique 4 por 6 e divida o resultado por 2.
+mult2= (4*6/2)
+pot=(mult2)
+print()
+
+#Eleve 3 à potência de 4.
+pot=(3**4)
+print(pot)
+print()
+
+##Calcule a média de 8, 12 e 15.
+soma=(8+12+15)
+med=(soma/3)
+print(med)
+print()
+
+##Subtraia 10 de 2 e multiplique o resultado por 5.
+sub=(10-2)
+print(sub)
+print()
+
+##Divida 27 por 3 e some 5.
+div=(27/3+5)
+print(div)
+print()
+
+#Calcule o módulo de 17 por 4.
+md = 17 % 4 == 0
+print(md)
+print()
+
+#Multiplique 9 por 3 e, em seguida, eleve o resultado ao quadrado.
+#Calcule a raiz quadrada de 81.
+#Adicione 20 a 3 vezes 4.
+#Multiplique 15 por 2 e, em seguida, subtraia 7.
+#Eleve 5 ao cubo.
+#Calcule a média de 17, 21 e 25.
+#Multiplique 11 por 2 e adicione 7.
+#Subtraia 15 de 3 vezes 8 e divida o resultado por 2.
+#Eleve 2 à potência de 10.
