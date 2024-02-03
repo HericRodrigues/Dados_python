@@ -1,0 +1,58 @@
+#**Exercício 1:**
+#Crie uma lista chamada `numeros`
+#que contenha os números inteiros de 1 a 5 e imprima-a na tela.
+number_list = [1,2,3,4,5]
+print(number_list)
+print()
+
+#**Exercício 2:**
+#Acesse e imprima o terceiro elemento da lista `numeros`.
+element=number_list[3]
+print(element)
+print()
+
+#**Exercício 3:**
+#Adicione o número 6 à lista numeros e imprima a lista atualizada.
+number_list.append(6)
+print(number_list)
+print()
+
+#**Exercício 4:**
+#Remova o número 3 da lista `numeros` e imprima a lista resultante.
+number_list.remove(3)
+print(number_list)
+print()
+
+#**Exercício 5:**
+#Crie uma lista chamada frutas contendo três nomes de frutas diferentes.
+#Em seguida, concatene essa lista com a lista numeros e imprima o resultado.
+
+frut_ninja=["maçã", "goiba", "tangerina"]
+print(frut_ninja + number_list) 
+print("<..............................................>")
+
+print("Usando o for")
+#Exercício 6: Use um loop for para percorrer e imprimir
+#todos os elementos da lista  = [12,45,45,89,78,3,6,78,87]
+list_for = [12,45,45,89,78,3,6,78,87]
+for i in list_for:
+    print(i)
+print()
+
+#**Exercício 7:**
+#Verifique se o número 5 está presente na lista numeros e imprima
+#uma mensagem informando se ele está na lista ou não.
+
+
+list_for=[12,45,45,89,78,3,6,78,87]
+print(list_for)
+if 5 in list_for:
+    print("O numero está presente na lista")
+else:
+    print("O numero não esta presente")
+if list_for:
+    list_for.append(5)
+    print(list_for)
+
+
+
