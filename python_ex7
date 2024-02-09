@@ -1,0 +1,55 @@
+ATIVIDADE:
+
+CRIE UM SISTEMA DE UM BANCO.
+OPERAÇÕES DO BANCO: 
+
+SAQUE()
+DEPOSITO()
+VISUALIZAR_STATUS()
+BOCA_DO_CAIXA()
+balance = 10000.0
+
+  
+def banco_tesouro():
+    print("Bem-vindo ao banco Tesouro")
+    print()
+    name_us = input("Digite seu nome completo para começar: ")
+
+    if name_us == "Heric":
+        print("Seus dados são:")
+        print("Nome completo: Heric Rodrigues Silva")  
+        print("Cidade: Guarulhos")
+        print("Banco Tesouro agradece a sua preferência")
+        print("Seu saldo é: ", balance)
+        print("<__________________________________>")
+    else:
+        print("Usuário não cadastrado")
+        return  
+
+    print("DIGITE ALGUMA FUNÇÃO: ")
+    operacao = input("Digite 'saque' para sacar ou 'deposito' para depositar: ")  
+    if operacao == "saque":
+        saque()
+    elif operacao == "deposito":
+        deposito()
+    else:
+        print("Operação inválida.")
+
+def saque():
+    global balance  
+    saque_valor = float(input("Digite o valor que deseja sacar: "))
+    if saque_valor > balance:
+        print("Saldo insuficiente para o saque.")
+    else:
+        balance -= saque_valor
+        print("Saque de", saque_valor, "realizado com sucesso.")
+        print("Seu novo saldo é:", balance)
+
+def deposito():
+    global balance  
+    deposito_valor = floa   t(input("Digite o valor que deseja depositar: "))
+    balance += deposito_valor
+    print("Depósito de", deposito_valor, "realizado com sucesso.")
+    print("Seu novo saldo é:", balance)
+
+banco_tesouro()  
