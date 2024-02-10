@@ -1,0 +1,35 @@
+##Exercícios: ###
+#Exercício 1:
+#Peça ao usuário para inserir um
+#número e manipule a exceção caso ele insira algo que não seja um número inteiro.
+'''while True:
+    try:
+        num = int(input("Por favor, insira um número inteiro: "))
+        print("O número inserido é:", num)
+        break 
+    except ValueError:
+        print("Erro: Você não inseriu um número inteiro. Tente novamente.")     
+'''
+##Exercício 2:
+#Peça ao usuário para inserir dois números e realize
+#uma operação de divisão. Manipule a exceção caso ocorra um erro na operação
+#- ZeroDivisionError.
+while True:
+    try:
+        num_1 = int(input("Digite um numero para ser dividido: "))
+        num_2 = int(input("Digite um numero: "))
+        print(num_1/num_2)
+        break
+    except ZeroDivisionError:
+        print("Você dividiu por zero, tente novamente sem o 0")
+##Exercício 3:###
+#Crie uma função que aceite uma lista e um índice como entrada
+#e retorne o elemento naquele índice. Manipule a exceção caso o
+#índice seja inválido(caso imprima um indice que não exista na lista).
+
+##Exercício 4:###
+#Crie uma função que divida dois números e
+#manipule a exceção caso o divisor seja zero.''']
+
+
+TERMINAR ISSSOOO
