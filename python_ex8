@@ -1,0 +1,114 @@
+'''1 
+
+CRIE UMA FUNÇÃO PARA COMPARAR 2 NÚMEROS. UTILIZE VARIÁVEIS LOCAIS.
+
+def comp():
+    n1 = int(input("Digite um numero: "))
+    n2 = int(input("Digite um numero: "))
+    if n1 == n2:
+        print("Esses numeros são Iguais")
+    elif n1 > n2:
+        print(n1, "É MAIOR")
+    elif n1 < n2:
+        print(n2, "É MAIOR")
+    elif n1 != n2:
+        print("Esses numeros não são iguais")
+    else:
+        print("Algo digitado errado")
+comp()
+'''
+##2
+
+#CRIE UM AFUNÇÃO PARA MULTIPLICAR 3 NUMEROS.
+'''
+def mult():
+    a= int(input())
+    b= int(input())
+    c= int(input())
+    print(a*b*c)
+mult() 
+'''
+
+##3
+
+#CRIE UMA FUNÇÃO PARA DESCOBRIR O VALOR ELEVADO DE UM NÚMERO.
+'''
+def elevado(a):
+    print(a**2)
+
+elevado(20)
+'''
+##4
+
+#CRIE UMA FUNÇÃO PARA MOSTRAR UMA MENSAGEM
+#PERSONALIZADA NA TELA, SE O USUÁRIO PARA DIGITAR, 18 ANOS
+'''
+def age():
+    age = int(input("digite sua idade: "))
+
+    if age <= 18:
+        print("Usuario maior idade")
+    else:
+        print("Usuario menor de idade")
+age()
+'''
+
+##5
+
+#DESENVOLVA UMA FUNÇÃO PARA DESCOBRIR A IDADE DE UMA PESSOA.
+'''def verif():
+    ano_nasc = int(input("Digite o ano de nasciemento: "))
+    ano_at = 2004
+    print("Sua idade", ano_at - ano_nasc)
+verificar()                
+    '''
+##6
+
+#DESENVOLVA UM AFUNÇÃO PARA VER SE O BRASIL GANHOU A COPA DE 1998
+
+##7 
+
+#DESENVOLVA UM SISTEMA DE RESTAURANTE, ONDE O CLIENTE TEM
+#OPÇÃO DE ESCOLHER ENTRE SALADA, MACARRONADA, SANDUICHE, SORVETE.
+def system_rest():
+    
+    print("BEM-VINDO AO RESTAURANTE!!")
+    print("Escolha seu pedido dentro do nosso MENU: ")
+    print("saladas, macarronada, sanduiches e sorvetes")
+    esc = input("Digite: ")
+
+    if esc == saladas:
+        print('''
+            Saladas:
+            Alface
+            Tomate
+            JACA
+            ''')
+    elif esc == macarronadas:
+        print('''
+            Espaguete.
+            Talharim.
+            Penne.
+            Rigatoni.
+            Massa cabelo de anjo.
+            ''')
+    elif esc == sanduiches:
+        print('''Tapioca.
+            Crepioca.
+            Panqueca de banana com aveia.
+            Sanduíche natural.
+            Pão de queijo de frigideira.
+            ''')
+    elif esc == sorvetes:
+        print('''
+            Sorvete de chocolate. 
+            Sorvete de creme. 
+            Sorvete de morango. 
+            Sorvete de flocos.
+            ''')
+    else:
+        print("Escolha um pedido")
+system_rest()            
+    
+    
+TERMINAR
