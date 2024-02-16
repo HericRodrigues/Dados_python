@@ -71,44 +71,54 @@ verificar()
 #DESENVOLVA UM SISTEMA DE RESTAURANTE, ONDE O CLIENTE TEM
 #OPÇÃO DE ESCOLHER ENTRE SALADA, MACARRONADA, SANDUICHE, SORVETE.
 def system_rest():
-    
     print("BEM-VINDO AO RESTAURANTE!!")
-    print("Escolha seu pedido dentro do nosso MENU: ")
-    print("saladas, macarronada, sanduiches e sorvetes")
-    esc = input("Digite: ")
+    while True:
+        print("Escolha seu pedido dentro do nosso MENU: ")
+        print("1. Saladas")
+        print("2. Macarronadas")
+        print("3. Sanduíches")
+        print("4. Sorvetes")
+        print("5. Sair")
+        
+        esc = input("Digite o número correspondente ao seu pedido: ")
 
-    if esc == saladas:
-        print('''
-            Saladas:
-            Alface
-            Tomate
-            JACA
-            ''')
-    elif esc == macarronadas:
-        print('''
-            Espaguete.
-            Talharim.
-            Penne.
-            Rigatoni.
-            Massa cabelo de anjo.
-            ''')
-    elif esc == sanduiches:
-        print('''Tapioca.
-            Crepioca.
-            Panqueca de banana com aveia.
-            Sanduíche natural.
-            Pão de queijo de frigideira.
-            ''')
-    elif esc == sorvetes:
-        print('''
-            Sorvete de chocolate. 
-            Sorvete de creme. 
-            Sorvete de morango. 
-            Sorvete de flocos.
-            ''')
-    else:
-        print("Escolha um pedido")
-system_rest()            
-    
-    
-TERMINAR
+        if esc == '1':
+            print('''
+                Saladas:
+                1. Alface
+                2. Tomate
+                3. JACA
+                ''')
+        elif esc == '2':
+            print('''
+                Macarronadas:
+                1. Espaguete.
+                2. Talharim.
+                3. Penne.
+                4. Rigatoni.
+                5. Massa cabelo de anjo.
+                ''')
+        elif esc == '3':
+            print('''
+                Sanduíches:
+                1. Tapioca.
+                2. Crepioca.
+                3. Panqueca de banana com aveia.
+                4. Sanduíche natural.
+                5. Pão de queijo de frigideira.
+                ''')
+        elif esc == '4':
+            print('''
+                Sorvetes:
+                1. Sorvete de chocolate. 
+                2. Sorvete de creme. 
+                3. Sorvete de morango. 
+                4. Sorvete de flocos.
+                ''')
+        elif esc == '5':
+            print("Obrigado por visitar nosso restaurante! Volte sempre!")
+            break
+        else:
+            print("Opção inválida. Por favor, escolha uma opção válida.")
+
+system_rest()
