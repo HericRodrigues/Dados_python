@@ -1,0 +1,83 @@
+## import random
+## <!-- #1 - Crie um número aleatório de 10, 5** -->
+# for n in range(10,5):
+#     print(n, end=',')
+
+
+## **2 - Crie 3 números aleatórios**
+# for n in range(1,4):
+#     n = random.randint(1,10)
+#     print(n, end=',')
+    
+    
+## **3 - Crie um número aleatório entre 10 a 30 utilize o range()**
+# for n in range(1):
+#     n = random.randint(1,30)
+#     print(n, end='')
+
+
+## **4 - Contagem regressiva simples**
+# Escreva um programa que exiba uma contagem regressiva de 10 a 1, e depois imprima "Fogo!".
+# def contagem_regressiva():
+#     for i in range(10, 0, -1):
+#         print(i)
+#     print("Fogo!")
+# contagem_regressiva()
+
+## **5 - Soma de números pares**
+#Peça ao usuário que insira um número inteiro positivo e, em seguida, 
+#calcule a soma de todos os números pares de 2 até o número inserido.
+# def par_cont():
+#     while True:
+#         try:
+#             num_int = int(input("Digite um número inteiro: "))
+#             break  
+#         except ValueError:
+#             print("Entrada inválida. Digite um número inteiro.")
+
+#     if num_int % 2 != 0:
+#         num_int += 1 
+
+#     for i in range(num_int, 101, 2):
+#         print(i)
+
+# par_cont()
+
+##______________________________________________________________#
+# def sum_of_even_numbers():
+#     while True:
+#         try:
+#             num_int = int(input("Insira um número inteiro positivo: "))
+#             if num_int <= 0:
+#                 print("Por favor, insira um número inteiro positivo.")
+#             else:
+#                 break  
+#         except ValueError:
+#             print("Entrada inválida. Insira um número inteiro positivo.")
+
+    
+#     sum_even = 0
+
+    
+#     for i in range(2, num_int + 1, 2):
+#         sum_even += i  
+
+#     print("A soma de todos os números pares de 2 até", num_int, "é:", sum_even)
+
+# sum_of_even_numbers()
+
+## **6 - Tabuada de multiplicação**
+# Peça ao usuário para inserir um número inteiro e mostre a tabuada de multiplicação desse número de 1 a 10.
+# n = int(input('Digite um numero para ver a tabuada: '))
+# for i in range(0,11):
+    
+#     m = i*n
+#     print(m,"X", i,"=",m)
+    
+## **7 -  Números ímpares reversos**
+# Exiba uma contagem regressiva de números ímpares de 99 a 1. -->
+# def contagem_regressiva_impares():
+#      for i in range(99, 0, -1):
+#          print(i, end=',')
+     
+# contagem_regressiva_impares()
