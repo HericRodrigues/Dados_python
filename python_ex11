@@ -1,0 +1,96 @@
+'''
+# # c = 0
+# # while c <= 3:
+# #     print('Hello')
+# #     c += 1
+
+# # import random
+
+# # def jogo_adv():
+    
+# #     c = 0 
+# #     while c < 3: 
+# #         c += 1
+# #         ale = random.randint(1, 10) 
+# #         chute = int(input('>> '))
+# #         if ale == chute:
+# #             print('Acertou! O número é ->', ale)
+# #             break
+# #         else:
+# #             print('Errou o número, o número era ->', ale)
+# #     else:  
+# #         print('Você excedeu o número máximo de tentativas. O número era ->', ale)
+
+# # jogo_adv()
+# '''
+# # Desafio Restaurante:
+
+# # **Utilize o while para criar um restaurante**
+# def system_rest():
+#     print("BEM-VINDO AO RESTAURANTE!!")
+#     pedido = []
+
+#     while True:
+#         print("Escolha seu pedido dentro do nosso MENU: ")
+#         print("1. Saladas")
+#         print("2. Macarronadas")
+#         print("3. Sanduíches")
+#         print("4. Sorvetes")
+#         print("5. Verificar pedido")
+#         print("6. Sair")
+        
+#         esc = input("Digite o número correspondente ao seu pedido: ")
+
+#         if esc == '1':
+#             print('''
+#                 Saladas:
+#                 1. Alface
+#                 2. Tomate
+#                 3. JACA
+#                 ''')
+#             item = input("Escolha o número correspondente ao item: ")
+#             pedido.append(("Salada", item))
+#         elif esc == '2':
+#             print('''
+#                 Macarronadas:
+#                 1. Espaguete.
+#                 2. Talharim.
+#                 3. Penne.
+#                 4. Rigatoni.
+#                 5. Massa cabelo de anjo.
+#                 ''')
+#             item = input("Escolha o número correspondente ao item: ")
+#             pedido.append(("Macarronada", item))
+#         elif esc == '3':
+#             print('''
+#                 Sanduíches:
+#                 1. Tapioca.
+#                 2. Crepioca.
+#                 3. Panqueca de banana com aveia.
+#                 4. Sanduíche natural.
+#                 5. Pão de queijo de frigideira.
+#                 ''')
+#             item = input("Escolha o número correspondente ao item: ")
+#             pedido.append(("Sanduíche", item))
+#         elif esc == '4':
+#             print('''
+#                 Sorvetes:
+#                 1. Sorvete de chocolate. 
+#                 2. Sorvete de creme. 
+#                 3. Sorvete de morango. 
+#                 4. Sorvete de flocos.
+#                 ''')
+#             item = input("Escolha o número correspondente ao item: ")
+#             pedido.append(("Sorvete", item))
+#         elif esc == '5':
+#             print("\nResumo do pedido:")
+#             for item in pedido:
+#                 print("- ", item[0], ": Item", item[1])
+#             print("Total de itens no pedido:", len(pedido))
+#         elif esc == '6':
+#             print("Obrigado por visitar nosso restaurante! Volte sempre!")
+#             break
+#         else:
+#             print("Opção inválida. Por favor, escolha uma opção válida.")
+
+# system_rest()
