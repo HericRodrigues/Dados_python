@@ -1,24 +1,78 @@
 import pygame
+import random
 
 pygame.init()
 
-w = 1000
-h = 500
+# colors
+BLACK = (0, 0, 0)
+GREEN = (0, 255, 0)
+RED = (255, 0, 0)
+WIDTH = 1200
+HEIGHT = 720
+CELL_SIZE = 40
 
-screen = pygame.display.set_mode((w, h))
-pygame.display.set_caption('Hey boi')
+FPS = 10
+
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption('COBRÃO')
 clock = pygame.time.Clock()
-rodando = True
 
-while rodando:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            rodando = False
-    
-    
-    screen.fill("purple")
-    pygame.display.flip
-    pygame.display.update()
-    clock.tick(60)
+def main():
+    running = True
+    snake = [[100, 100], [100, 100], [100, 100]]
+    direction = 'RIGHT'
 
-pygame.quit()
+    food_position = [
+        random.randrange(1, WIDTH // CELL_SIZE) * CELL_SIZE,
+        random.randrange(1, HEIGHT // CELL_SIZE) * CELL_SIZE
+    ]
+    score = 0
+    while running:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                running = False
+
+            elif event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_LEFT:
+                    direction = 'LEFT'
+                elif event.key == pygame.K_RIGHT:
+                    direction = 'RIGHT'
+                elif event.key == pygame.K_DOWN:
+                    direction = 'DOWN'
+                elif event.key == pygame.K_UP:
+                    direction = 'UP'
+
+        if direction == 'LEFT':
+            snake.insert(0, [snake[0][0] - CELL_SIZE, snake[0][1]])
+        elif direction == 'RIGHT':
+            snake.insert(0, [snake[0][0] + CELL_SIZE, snake[0][1]])
+        elif direction == 'UP':
+            snake.insert(0, [snake[0][0], snake[0][1] - CELL_SIZE])
+        elif direction == 'DOWN':
+            snake.insert(0, [snake[0][0], snake[0][1] + CELL_SIZE])
+
+        if snake[0][0] < 0 or snake[0][0] >= WIDTH or snake[0][1] < 0 or snake[0][1] >= HEIGHT:
+            running = False
+
+        if snake[0] == food_position:
+            food_position = [random.randrange(1, (WIDTH//CELL_SIZE)) * CELL_SIZE,
+                             random.randrange(1, (HEIGHT//CELL_SIZE)) * CELL_SIZE]
+            score += 1
+         
+        else:
+            snake.pop()
+
+        screen.fill(BLACK)
+        pygame.draw.rect(screen, RED, (food_position[0], food_position[1], CELL_SIZE, CELL_SIZE))
+        for segment in snake:
+            pygame.draw.rect(screen, GREEN, (segment[0], segment[1], CELL_SIZE, CELL_SIZE))
+
+        font = pygame.font.Font(None, 36)
+        text = font.render(f'Score: {score}', True, (255, 255, 255))
+        screen.blit(text, (10, 10))
+        pygame.display.update()
+        
+        clock.tick(FPS)
+
+if __name__ == '__main__':
+    main()
